@@ -1,4 +1,4 @@
-import {Bookmark, BookMarked, CommandIcon, DamIcon, EyeIcon, GithubIcon, HomeIcon, Info, MessageSquareTextIcon, Podcast, Share2Icon, ShareIcon, TagIcon, TrendingUpIcon, Video, XIcon} from "lucide-react";
+import {Bookmark, DamIcon, EllipsisIcon, EyeIcon, GithubIcon, Info, MessageSquareTextIcon, Podcast, Share2Icon, TagIcon, TrendingUpIcon, Video, XIcon} from "lucide-react";
 import { ModeToggle } from "@/components/ThemeToggle.jsx";
 import { Button } from "@/components/ui/button.jsx";
 
@@ -149,24 +149,29 @@ const Home = () => {
                         {/*Content for the middle column*/}
 
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
                                             🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
                                             </a>
@@ -180,45 +185,52 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
-                                            🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
+                                                20 JavaScript Tricks Every Developer Must Know 🚀
                                             </a>
                                         </h2>
                                     </div>
@@ -230,45 +242,52 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
-                                            🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
+                                                Designer-Developer Collaboration: 2024 Survey Results
                                             </a>
                                         </h2>
                                     </div>
@@ -280,43 +299,50 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
                                             🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
                                             </a>
@@ -330,43 +356,50 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
                                             🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
                                             </a>
@@ -380,43 +413,50 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
                                             🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
                                             </a>
@@ -430,43 +470,50 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* Single Post item */}
-                        <div className="bg-background/80 p-4 rounded-md border mb-4">
-                            <div className="flex items-center">
-                                <div className="mr-3">
-                                    <a href="">
-                                        <img className="h-10 w-10 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
-                                    </a>
+                        <div className="bg-background/80 p-5 rounded-md border mb-4">
+                            <div className="flex items-start justify-between">
+                                <div className="flex items-center">
+                                    <div className="mr-3">
+                                        <a href="">
+                                            <img className="h-9 w-9 rounded-full" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F38578%2F5cadc1f1-fbca-496d-a375-667c21d9c122.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <a href="" className="font-medium hover:text-yellow-700 hover:underline transition-all duration-300">
+                                            Michael Tharrington
+                                        </a>
+                                        <span className="text-sm">0ct 29</span>
+                                    </div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <a href="">
-                                        Michael Tharrington
-                                    </a>
-                                    <span>0ct 29</span>
+                                <div>
+                                    <a href="" className="hover:text-yellow-700"><EllipsisIcon size={20}/></a>
                                 </div>
                             </div>
                             <div className="pl-12">
                                 <div>
                                     <div className=" my-4">
-                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-blue-800 hover:underline">
+                                        <h2 className="text-2xl font-bold transition-all duration-300 hover:text-yellow-700 hover:underline">
                                             <a href="">
                                             🚀 pgai Vectorizer: Automate AI Embeddings With One SQL Command in PostgreSQL
                                             </a>
@@ -480,20 +527,22 @@ const Home = () => {
                                 <div className="flex items-center justify-between mt-5">
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center space-x-1.5">
-                                            <EyeIcon size={18}/>
-                                            <span>3</span>
-                                        </div>
-                                        <div className="flex items-center space-x-1.5">
-                                            <MessageSquareTextIcon size={18}/>
+                                            <EyeIcon size={20}/>
                                             <span>3</span>
                                         </div>
                                         <div>
-                                            <Share2Icon size={18}/>
+                                            <a href="" className="flex items-center space-x-1.5 hover:text-yellow-700">
+                                                <MessageSquareTextIcon size={20}/>
+                                                <span>3</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" className="hover:text-yellow-700"><Share2Icon size={18}/></a>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">
                                         <span>3 min read</span>
-                                        <a href=""><Bookmark size={20}/></a>
+                                        <a href="" className="hover:text-yellow-700"><Bookmark size={20}/></a>
                                     </div>
                                 </div>
                             </div>
